@@ -1,1 +1,63 @@
-<h2>Hello, Something is coming cool!</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deepak Tiwari — Links</title>
+  <meta name="description" content="Deepak Tiwari — Web developer. Links to my work, GitHub, blog and contact." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1220;--card:#0f172a;--muted:#9aa4b2;--accent:#7c3aed}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#e6eef6;background:linear-gradient(180deg,#071026 0%, #051022 100%);display:flex;align-items:center;justify-content:center;padding:28px}
+    .wrap{width:100%;max-width:420px;text-align:center}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:16px;padding:28px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 10px 40px rgba(2,6,23,0.6)}
+    .avatar{width:96px;height:96px;border-radius:18px;margin:0 auto;display:grid;place-items:center;font-weight:800;background:linear-gradient(135deg,#06b6d4,#7c3aed);font-size:36px;color:#fff}
+    h1{font-size:20px;margin:14px 0 6px}
+    p.lead{margin:0 0 18px;color:var(--muted);font-size:13px}
+
+    .links{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+    .link{display:block;padding:14px 16px;border-radius:12px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;text-decoration:none;font-weight:700;box-shadow:0 8px 20px rgba(124,58,237,0.16)}
+    .link.ghost{background:transparent;border:1px solid rgba(255,255,255,0.05);color:#e6eef6}
+    .meta{margin-top:14px;color:var(--muted);font-size:13px}
+
+    .social{display:flex;gap:10px;justify-content:center;margin-top:12px}
+    .social a{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.03);display:grid;place-items:center;color:var(--muted);text-decoration:none;font-weight:700}
+
+    footer{margin-top:14px;color:var(--muted);font-size:12px}
+
+    @media (max-width:420px){.wrap{padding:0 8px}.card{padding:20px}.avatar{width:84px;height:84px;font-size:30px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="avatar">DT</div>
+      <h1>Deepak Tiwari</h1>
+      <p class="lead">Web developer — WordPress, WooCommerce, performance and tracking. Available for freelance work.</p>
+
+      <div class="links">
+        <a class="link" href="https://www.deepaktiwari.dev/?utm_source=iamdeepaktiwari.github.io" target="_blank" rel="noopener">Website</a>
+        <a class="link" href="https://www.curativeartist.com/?utm_source=iamdeepaktiwari.github.io" target="_blank" rel="noopener">Curative Artist (blog)</a>
+        <a class="link" href="mailto:dt@deepaktiwari.dev">Email me</a>
+      </div>
+
+      <div class="social" aria-hidden>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">in</a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener">tw</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">f</a>
+      </div>
+
+      <div class="meta">Based in India • Open to remote projects</div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Deepak Tiwari
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
